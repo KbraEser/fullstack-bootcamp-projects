@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteMovie } from "../actions/movieActions";
+import { addFavorite } from "../actions/favoritesActions";
 
 const Movie = (props) => {
   const movies = useSelector((store) => store.movieReducer.movies);
@@ -16,6 +17,11 @@ const Movie = (props) => {
     // console.log("delete", typeof id, id);
     dispatch(deleteMovie(id));
     push("/movies");
+  };
+
+  const addFavoriteHandler = () => {
+    console.log("addFavoriteHandler");
+    dispatch(addFavorite(movie));
   };
   return (
     <div className="bg-white rounded-md shadow flex-1">
@@ -52,7 +58,10 @@ const Movie = (props) => {
         >
           Sil
         </button>
-        <button className="myButton bg-blue-600 hover:bg-blue-500 ">
+        <button
+          onClick={addFavoriteHandler}
+          className="myButton bg-blue-600 hover:bg-blue-500 "
+        >
           Favorilere ekle
         </button>
       </div>
