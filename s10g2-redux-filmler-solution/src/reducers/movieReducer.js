@@ -3,12 +3,13 @@ import movies from "../data.js";
 
 const initialState = {
   movies: movies,
-  appTitle: "IMDB Movie Database",
+  appTitle: "IMDB Movie Database 1023",
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case DELETE_MOVIE:
+      // console.log("reducer Delete", action.payload);
       return {
         ...state,
         movies: state.movies.filter((item) => action.payload !== item.id),
