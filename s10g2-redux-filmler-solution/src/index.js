@@ -6,11 +6,12 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
-import { legacy_createStore as createStore } from "redux";
+import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import reducer from "./reducers";
+import logger from "redux-logger";
 
-const dukkan = createStore(reducer);
+const dukkan = createStore(reducer, applyMiddleware(logger));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
