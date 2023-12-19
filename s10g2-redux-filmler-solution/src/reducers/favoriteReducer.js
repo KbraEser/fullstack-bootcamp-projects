@@ -25,12 +25,12 @@ const reducer = (state = initialState, action) => {
       console.log("reducer Delete", action.payload, typeof action.payload);
       return {
         ...state,
-        movies: state.favorites.filter((item) => action.payload !== item.id),
+        favorites: state.favorites.filter((item) => action.payload !== item.id),
       };
     case ADD_FAVORITE:
       return {
         ...state,
-        movies: [...state.favorites, action.payload],
+        favorites: [...state.favorites, action.payload],
       };
     case TOGGLE_FAVORITES:
       return {
