@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteMovie } from "../actions/movieActions";
-import { addFavorite } from "../actions/favoritesActions";
+import { addFavorite, removeFavorite } from "../actions/favoritesActions";
 
 const Movie = (props) => {
   const movies = useSelector((store) => store.movieReducer.movies);
@@ -16,6 +16,8 @@ const Movie = (props) => {
   const deleteHandler = () => {
     // console.log("delete", typeof id, id);
     dispatch(deleteMovie(id));
+    dispatch(removeFavorite(id));
+
     push("/movies");
   };
 
