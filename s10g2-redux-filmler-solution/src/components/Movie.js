@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { deleteMovie } from "../actions/movieActions";
 
 const Movie = (props) => {
-  const movies = useSelector((store) => store.movies);
+  const movies = useSelector((store) => store.movieReducer.movies);
 
   const { id } = useParams();
   const { push } = useHistory();
