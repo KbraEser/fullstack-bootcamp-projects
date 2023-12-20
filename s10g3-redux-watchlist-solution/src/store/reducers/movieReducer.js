@@ -43,6 +43,19 @@ function movieReducer(state = initialState, action) {
           disabledNav: "NONE",
         };
       }
+
+    case REMOVE_MOVIE:
+      return {
+        ...state,
+        movies: state.movies.filter((movie) => movie.id !== action.payload.id),
+        sira: state.sira === 0 ? 0 : state.sira - 1,
+      };
+
+    case RESTORE_MOVIE:
+      return {
+        ...state,
+        movies: [...state.movies, action.payload],
+      };
     default:
       return state;
   }
