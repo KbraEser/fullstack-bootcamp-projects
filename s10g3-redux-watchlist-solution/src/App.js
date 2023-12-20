@@ -3,8 +3,6 @@ import { Switch, Route, NavLink } from "react-router-dom";
 import Movie from "./components/Movie";
 import FavMovie from "./components/FavMovie";
 
-import { useSelector } from "react-redux";
-
 function App() {
   const [sira, setSira] = useState(0);
   const favMovies = [];
@@ -16,19 +14,10 @@ function App() {
   return (
     <div className="wrapper max-w-2xl mx-auto">
       <nav className="flex text-2xl pb-6 pt-8 gap-2 justify-center">
-        <NavLink
-          to="/"
-          exact
-          className="py-3 px-6 "
-          activeClassName="bg-white shadow-sm text-blue-600"
-        >
+        <NavLink to="/" exact className="py-3 px-6 " activeClassName="bg-white shadow-sm text-blue-600">
           Filmler
         </NavLink>
-        <NavLink
-          to="/listem"
-          className="py-3 px-6 "
-          activeClassName="bg-white shadow-sm text-blue-600"
-        >
+        <NavLink to="/listem" className="py-3 px-6 " activeClassName="bg-white shadow-sm text-blue-600">
           Listem
         </NavLink>
       </nav>
