@@ -7,11 +7,14 @@ import { useSelector, useDispatch } from "react-redux";
 
 function App() {
   const dispatch = useDispatch();
-  const { sira } = useSelector((state) => state.movieReducer);
-  const favMovies = [];
+  const { sira, disabledNav } = useSelector((state) => state.movieReducer);
+  const favMovies = useSelector((state) => state.favoriteReducer.favorites);
 
   function sonrakiFilm() {
     dispatch(next());
+  }
+  function oncekiFilm() {
+    dispatch(prev());
   }
 
   return (
@@ -39,8 +42,17 @@ function App() {
 
           <div className="flex gap-3 justify-end py-3">
             <button
+              onClick={oncekiFilm}
+              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500
+              disabled:opacity-50"
+              disabled={disabledNav === "PREV"}
+            >
+              Önceki
+            </button>
+            <button
               onClick={sonrakiFilm}
-              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500"
+              className="select-none px-4 py-2 border border-blue-700 text-blue-700 hover:border-blue-500 hover:text-blue-500 disabled:opacity-50"
+              disabled={disabledNav === "NEXT"}
             >
               Sıradaki
             </button>
