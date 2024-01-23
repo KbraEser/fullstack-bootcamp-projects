@@ -1,13 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import MovieListItem from "./MovieListItem";
-import MovieListFooter from "./MovieListFooter";
-
-import { useSelector } from "react-redux";
+import MovieListItem from './MovieListItem';
+import MovieFooter from './MovieFooter';
 
 const MovieList = (props) => {
-  const movies = useSelector((store) => store.movieReducer.movies);
-  // const movies = [];
+  const movies = [];
 
   return (
     <div className="flex-1">
@@ -31,7 +28,7 @@ const MovieList = (props) => {
         </table>
       </div>
 
-      <MovieListFooter totalMovies={movies.length} />
+      <MovieFooter totalMovies={movies.length} />
     </div>
   );
 };

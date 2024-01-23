@@ -1,34 +1,25 @@
-import React, { useState } from "react";
-import { addMovie } from "./../actions/movieActions";
-
-import { Link, useHistory } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 const AddMovieForm = (props) => {
   const { push } = useHistory();
-  const dispatch = useDispatch();
 
   const [movie, setMovie] = useState({
-    title: "",
-    director: "",
-    genre: "",
+    title: '',
+    director: '',
+    genre: '',
     metascore: 0,
-    description: "",
+    description: '',
   });
 
   const handleChange = (e) => {
     setMovie({
       ...movie,
-      id: Date.now(),
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    dispatch(addMovie(movie));
-    push("/movies");
-  };
+  const handleSubmit = (e) => {};
 
   const { title, director, genre, metascore, description } = movie;
   return (
@@ -40,47 +31,62 @@ const AddMovieForm = (props) => {
 
         <div className="px-5 py-3">
           <div className="py-2">
-            <label className="block pb-1 text-lg">Title</label>
+            <label htmlFor="title" className="block pb-1 text-lg">
+              Title
+            </label>
             <input
               value={title}
               onChange={handleChange}
               name="title"
               type="text"
+              id="title"
             />
           </div>
           <div className="py-2">
-            <label className="block pb-1 text-lg">Director</label>
+            <label htmlFor="director" className="block pb-1 text-lg">
+              Director
+            </label>
             <input
               value={director}
               onChange={handleChange}
               name="director"
               type="text"
+              id="director"
             />
           </div>
           <div className="py-2">
-            <label className="block pb-1 text-lg">Genre</label>
+            <label htmlFor="genre" className="block pb-1 text-lg">
+              Genre
+            </label>
             <input
               value={genre}
               onChange={handleChange}
               name="genre"
               type="text"
+              id="genre"
             />
           </div>
           <div className="py-2">
-            <label className="block pb-1 text-lg">Metascore</label>
+            <label htmlFor="metascore" className="block pb-1 text-lg">
+              Metascore
+            </label>
             <input
               value={metascore}
               onChange={handleChange}
               name="metascore"
               type="number"
+              id="metascore"
             />
           </div>
           <div className="py-2">
-            <label className="block pb-1 text-lg">Description</label>
+            <label htmlFor="Description" className="block pb-1 text-lg">
+              Description
+            </label>
             <textarea
               value={description}
               onChange={handleChange}
               name="description"
+              id="Description"
             ></textarea>
           </div>
         </div>

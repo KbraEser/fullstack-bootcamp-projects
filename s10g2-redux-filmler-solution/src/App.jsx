@@ -1,21 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from 'react-router-dom';
 
-import MovieList from "./components/MovieList";
-import Movie from "./components/Movie";
+import MovieList from './components/MovieList';
+import Movie from './components/Movie';
 
-import AppHeader from "./components/AppHeader";
+import MovieHeader from './components/MovieHeader';
 
-import AddMovieForm from "./components/AddMovieForm";
-import FavoriteMovieList from "./components/FavoriteMovieList";
-
-import { useSelector } from "react-redux";
+import AddMovieForm from './components/AddMovieForm';
+import FavoriteMovieList from './components/FavoriteMovieList';
 
 const App = (props) => {
-  const displayFavorites = useSelector(
-    (state) => state.favoriteReducer.displayFavorites
-  );
+  const displayFavorites = true;
 
   return (
     <div>
@@ -24,7 +20,7 @@ const App = (props) => {
       </nav>
 
       <div className="max-w-4xl mx-auto px-3 pb-4">
-        <AppHeader />
+        <MovieHeader />
         <div className="flex flex-col sm:flex-row gap-4">
           {displayFavorites && <FavoriteMovieList />}
 
