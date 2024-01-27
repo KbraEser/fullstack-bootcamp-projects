@@ -1,10 +1,10 @@
-import { movies } from '../../data.js';
+import { movies } from "../../data.js";
 import {
   SONRAKI_FILM,
   ONCEKI_FILM,
   LISTEYE_EKLE,
   LISTEDEN_CIKAR,
-} from '../actions/index.js';
+} from "../actions/index.js";
 const initialState = {
   // TODO: Remove splice
   movies: movies,
@@ -19,13 +19,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         sira: state.sira + 1,
       };
-
     case ONCEKI_FILM:
       return {
         ...state,
         sira: state.sira - 1,
       };
-
     case LISTEYE_EKLE:
       const activeMovie = state.movies[state.sira];
 
