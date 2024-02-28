@@ -30,7 +30,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Monster For Simple RPG Game
 
- * org.example.model.rpg paketi altında ```Monster``` isminde bir ```abstract``` sınıf tanımlayınız.
+ * org.example.rpg paketi altında ```Monster``` isminde bir ```abstract``` sınıf tanımlayınız.
  * ```Monster``` sınıfının 3 tane ```instance variable``` olmalı. ```name => String, hitPoints => int, damage => double```
  * Monster sınıfı için bir tane ```constructor``` metodu tanımlanmalı. İlgili 3 sınıf değişkenini de set edebilmeli.
  * 3 sınıf değişkeni içinde getter metodu tanımlanmalı.
