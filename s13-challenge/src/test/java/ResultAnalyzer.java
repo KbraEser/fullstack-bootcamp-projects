@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 
 public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
     private List<TestResultStatus> testResultsStatus = new ArrayList<>();
+    private static final String taskId = "142";
 
     private enum TestResultStatus {
         SUCCESSFUL, ABORTED, FAILED, DISABLED;
@@ -67,7 +68,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
     private void sendTestResult(String result) throws IOException {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         try {
-            HttpPost request = new HttpPost("http://localhost:5001/nextgen/taskLog/saveJavaTasks");
+            HttpPost request = new HttpPost("https://coursey-gpt-backend.herokuapp.com/nextgen/taskLog/saveJavaTasks");
             StringEntity params = new StringEntity(result);
             request.addHeader("content-type", "application/json");
             request.setEntity(params);
