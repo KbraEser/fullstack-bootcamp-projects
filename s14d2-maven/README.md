@@ -40,7 +40,7 @@ Sınıf yazmaya doyduğunuz bir proje olması dileklerimle....
 * Carpet sınıfı içerisinde ```lying``` isminde bir metod tanımlayınız. Herhangi bir değer dönmeyecek. Sadece 'Carpet is lying on Bedroom floor.' mesajını ekrana basacak.
 
 ### Ceiling
-* org.example.model paketi altında Ceiling isminde bir sınıf yazınız. Ceiling sınıfının 2 tane ```instance variable``` olmalı. ```height``` ve ```color```. height int tipinde olmalı paintedColor PaintColor isminde bir enum olmalı ve ikisi de private olmalı.
+* org.example.model paketi altında Ceiling isminde bir sınıf yazınız. Ceiling sınıfının 2 tane ```instance variable``` olmalı. ```height``` ve ```color```. height int tipinde olmalı color PaintColor isminde bir enum olmalı ve ikisi de private olmalı.
 * Ceiling sınıfının bir ```constructor``` metodu olmalı. 2 değişkenine de değer atamalı.
 * Ceiling sınıfının ```getHeight()``` adında bir metodu olmalı. height değerini dönmeli. ```getColor``` adında bir metodu olmalı ve paintedColor değerini dönmeli.
 * Ceiling sınıfının ```create``` isimli bir metodu olmalı. Ekrana 'Ceiling has been built.' yazdırmalı.
