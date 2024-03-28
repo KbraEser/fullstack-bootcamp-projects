@@ -12,7 +12,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 ### Veri Yapıları Challenge
 
  * Amacımız uygun veri yapısını kullanarak bir string değerinin palindrom olup olmadığına karar vermek.
- * org.example Main sınıfı altında static ```checkForPalindromeLIFO``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
+ * org.example Main sınıfı altında static ```checkForPalindrome``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
  * İstediğiniz veri yapısını kullanabilirsiniz.
  * String değer .,?!_- gibi değerler içerebilir.Boşluk karakterini içerebilir. String değerleri büyük harfle ya da küçük harfle yazılabilir.
  * Yazacağınız kod bütün bu karakterlere ve küçük harf büyük harfe uygun çalışmalı.
