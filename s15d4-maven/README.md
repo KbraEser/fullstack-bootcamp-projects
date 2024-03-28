@@ -9,11 +9,11 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Hedeflerimiz:
 
-### Stack Challenge
+### Veri Yapıları ChallengeI
 
- * Amacımız Stack kullanarak bir string değerinin palindrom olup olmadığına karar vermek.
+ * Amacımız uygun veri yapısını kullanarak bir string değerinin palindrom olup olmadığına karar vermek.
  * org.example Main sınıfı altında static ```checkForPalindromeLIFO``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
- * İstediğiniz veri yapısını kullanabilirsiniz. Onemli olan ```LIFO``` mantığına uygun bir dizayn yapılması.
+ * İstediğiniz veri yapısını kullanabilirsiniz.
  * String değer .,?!_- gibi değerler içerebilir.Boşluk karakterini içerebilir. String değerleri büyük harfle ya da küçük harfle yazılabilir.
  * Yazacağınız kod bütün bu karakterlere ve küçük harf büyük harfe uygun çalışmalı.
  * Examples:
@@ -21,18 +21,6 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * ```Racecar``` => palindrom 
  * ```hello``` => palindrom değil
  * ```Was it a car or a cat I saw ?``` => palindrom
- * Çözümünüz mutlaka ```LIFO``` mantığına uygun yazılmalıdır.
-
-### Queues Challenge
-
- * Amacımız Stack ve Queue kullanarak bir string değerinin palindrom olup olmadığına karar vermek. 
- * org.example Main sınıfı altında  static ```checkForPalindromeFIFO``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
- * Stack için geçerli olan tüm kurallar burada geçerlidir.
- *  ```I did, did I?``` => palindrom
- * ```Racecar``` => palindrom
- * ```hello``` => palindrom değil
- * ```Was it a car or a cat I saw ?``` => palindrom
- *  Çözümünüz mutlaka ```LIFO``` ve ```FIFO``` mantığını birlikte içermelidir.
 
 ### Convert Decimal Numbers To Binary
 
