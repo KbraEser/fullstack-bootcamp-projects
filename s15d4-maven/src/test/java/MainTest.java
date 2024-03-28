@@ -1,9 +1,11 @@
 import org.example.Main;
+import org.example.WorkintechList;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 @ExtendWith(ResultAnalyzer.class)
 public class MainTest {
@@ -25,6 +27,57 @@ public class MainTest {
         assertEquals(Main.convertDecimalToBinary(5), "101");
         assertEquals(Main.convertDecimalToBinary(6), "110");
         assertEquals(Main.convertDecimalToBinary(13), "1101");
+    }
+
+    @Test
+    @DisplayName("WorkintechList doğru tipe sahip mi ?")
+    public void testWorkintechListType(){
+        WorkintechList list = new WorkintechList();
+        assertEquals(list instanceof ArrayList, true);
+        assertEquals(list instanceof List, true);
+    }
+    
+    @Test
+    @DisplayName("WorkintechList'e aynı eleman birden fazla kez eklenebiliyor mu ?")
+    public void testWorkintechListAddMethod(){
+        WorkintechList list = new WorkintechList();
+        list.add("Mehmet");
+        list.add("Mehmet");
+        list.add("Ali");
+        list.add("Ali");
+        list.add("Zeynep");
+        list.add("Zeynep");
+        assertEquals(list.size(), 3);
+    }
+
+    @Test
+    @DisplayName("WorkintechList sort metodu doğru çalışıyor mu?")
+    public void testWorkintechListAddMethod(){
+        WorkintechList list = new WorkintechList();
+        list.add("Mehmet");
+        list.add("Mehmet");
+        list.add("Ali");
+        list.add("Ali");
+        list.add("Zeynep");
+        list.add("Zeynep");
+        list.sort();
+        assertEquals(list.get(0), "Ali");
+        assertEquals(list.get(list.size()-1), "Zeynep");
+    }
+
+    @Test
+    @DisplayName("WorkintechList remove metodu doğru çalışıyor mu?")
+    public void testWorkintechListAddMethod(){
+        WorkintechList list = new WorkintechList();
+        list.add("Mehmet");
+        list.add("Mehmet");
+        list.add("Ali");
+        list.add("Ali");
+        list.add("Zeynep");
+        list.add("Zeynep");
+        list.remove("Ali");
+        assertNotEquals(list.get(0), "Ali");
+        assertEquals(list.get(0), "Mehmet");
     }
 
 }
