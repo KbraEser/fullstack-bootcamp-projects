@@ -9,25 +9,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MainTest {
 
     @Test
-    @DisplayName("Queue ile palindrom saayılar doğru bulunabiliyor mu ?")
-    public void testFIFOPalindrome(){
-        assertEquals(Main.checkForPalindromeFIFO("I did, did I?"), true);
-        assertEquals(Main.checkForPalindromeFIFO("Racecar"), true);
-        assertEquals(Main.checkForPalindromeFIFO("hello"), false);
-        assertEquals(Main.checkForPalindromeFIFO("Was it a car or a cat I saw ?"), true);
-        assertEquals(Main.checkForPalindromeFIFO("Test"), false);
-        assertEquals(Main.checkForPalindromeFIFO("Welcome"), false);
-    }
-
-    @Test
     @DisplayName("Stack ile palindrom saayılar doğru bulunabiliyor mu ?")
     public void testLIFOPalindrome(){
-        assertEquals(Main.checkForPalindromeLIFO("I did, did I?"), true);
-        assertEquals(Main.checkForPalindromeLIFO("Racecar"), true);
-        assertEquals(Main.checkForPalindromeLIFO("hello"), false);
-        assertEquals(Main.checkForPalindromeLIFO("Was it a car or a cat I saw ?"), true);
-        assertEquals(Main.checkForPalindromeLIFO("Test"), false);
-        assertEquals(Main.checkForPalindromeLIFO("Welcome"), false);
+        assertEquals(Main.checkForPalindrome("I did, did I?"), true);
+        assertEquals(Main.checkForPalindrome("Racecar"), true);
+        assertEquals(Main.checkForPalindrome("hello"), false);
+        assertEquals(Main.checkForPalindrome("Was it a car or a cat I saw ?"), true);
+        assertEquals(Main.checkForPalindrome("Test"), false);
+        assertEquals(Main.checkForPalindrome("Welcome"), false);
     }
 
     @Test
