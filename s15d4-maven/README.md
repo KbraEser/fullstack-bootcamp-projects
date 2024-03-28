@@ -1,4 +1,4 @@
-#  Java Stacks & Queues
+#  Java Veri Yapıları Challenge
 
 ### Proje Kurulumu
 
@@ -9,7 +9,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Hedeflerimiz:
 
-### Veri Yapıları ChallengeI
+### Veri Yapıları Challenge
 
  * Amacımız uygun veri yapısını kullanarak bir string değerinin palindrom olup olmadığına karar vermek.
  * org.example Main sınıfı altında static ```checkForPalindromeLIFO``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
