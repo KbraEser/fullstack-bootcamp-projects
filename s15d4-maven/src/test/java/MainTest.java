@@ -10,7 +10,7 @@ public class MainTest {
 
     @Test
     @DisplayName("Stack ile palindrom saayılar doğru bulunabiliyor mu ?")
-    public void testLIFOPalindrome(){
+    public void testPalindrome(){
         assertEquals(Main.checkForPalindrome("I did, did I?"), true);
         assertEquals(Main.checkForPalindrome("Racecar"), true);
         assertEquals(Main.checkForPalindrome("hello"), false);
