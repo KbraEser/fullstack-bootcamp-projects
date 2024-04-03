@@ -9,7 +9,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Hedeflerimiz:
 
-### Veri Yapıları ChallengeI
+### Veri Yapıları Challenge I
  * Amacımız uygun veri yapısını kullanarak bir string değerinin palindrom olup olmadığına karar vermek.
  * org.example Main sınıfı altında static ```checkForPalindrome``` adında bir method tanımlayınız. Method input olarak bir ```String``` almalı ve ```boolean``` bir değer dönmeli.
  * İstediğiniz veri yapısını kullanabilirsiniz.
@@ -21,7 +21,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * ```hello``` => palindrom değil
  * ```Was it a car or a cat I saw ?``` => palindrom
 
-### Veri Yapıları ChallengeII
+### Veri Yapıları Challenge II
  * org.example paketi altında ```WorkintechList``` adında bir sınıf yazmanız istenmektedir.
  * Sınıf ArrayList sınıfının tüm özelliklerine sahip olmalı ve bir ArrayList gibi davranmalı.
  * Ancak WorkintechList'ten oluşturulmuş instance değerleri içerilerinde bir ArrayList'ten farklı olarak tekrar eden data tutamazlar.
