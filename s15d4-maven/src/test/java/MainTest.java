@@ -4,6 +4,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -52,7 +55,7 @@ public class MainTest {
 
     @Test
     @DisplayName("WorkintechList sort metodu doğru çalışıyor mu?")
-    public void testWorkintechListAddMethod(){
+    public void testWorkintechListSortMethod(){
         WorkintechList list = new WorkintechList();
         list.add("Mehmet");
         list.add("Mehmet");
@@ -67,7 +70,7 @@ public class MainTest {
 
     @Test
     @DisplayName("WorkintechList remove metodu doğru çalışıyor mu?")
-    public void testWorkintechListAddMethod(){
+    public void testWorkintechListRemoveMethod(){
         WorkintechList list = new WorkintechList();
         list.add("Mehmet");
         list.add("Mehmet");
