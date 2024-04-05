@@ -5,6 +5,7 @@ import com.workintech.s17d2.model.*;
 import com.workintech.s17d2.rest.DeveloperController;
 import com.workintech.s17d2.tax.DeveloperTax;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -22,6 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(value = { DeveloperController.class})
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(ResultAnalyzer.class)
 class MainTest {
 
     private final DeveloperTax developerTax = new DeveloperTax();
