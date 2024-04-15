@@ -8,7 +8,7 @@ Projeyi forklayın ve clonlayın. Tamamladığınızda da pushlayın.
 ## Kütüphane Bilgi Sistemi
 
 Bu veritabanı, bir okulun kütüphanesinden öğrencilerin aldıkları kitapların bilgisini barındırmaktadır.
-* src -> main -> resources altında `test.sql` adında bir doya bulacaksınız.
+* src -> main -> resources altında `test.sql` adında bir dosya bulacaksınız.
 * `test.sql` dosyasını projeye başlamadan önce kendi veritabanınızda MUTLAKA ÇALIŞTIRMALISINIZ.
 * `application.properties` dosyasında `spring.datasource.username` karşısına veritabanını bağlanmak için kullandığınız kullanıcı ismini MUTLAKA GİRİNİZ.
 * `application.properties` dosyasında `spring.datasource.password` karşısına veritabanını bağlanmak için kullandığınız şifreyi MUTLAKA GİRİNİZ.
