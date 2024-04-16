@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@ExtendWith(ResultAnalyzer.class)	
 class SqlDmlJoinsApplicationTests {
 
 	private KitapRepository kitapRepository;
