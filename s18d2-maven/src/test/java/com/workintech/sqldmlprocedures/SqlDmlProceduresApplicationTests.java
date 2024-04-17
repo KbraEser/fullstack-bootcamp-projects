@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@ExtendWith(ResultAnalyzer.class)
 class SqlDmlProceduresApplicationTests {
 	private KitapRepository kitapRepository;
 	private OgrenciRepository ogrenciRepository;
