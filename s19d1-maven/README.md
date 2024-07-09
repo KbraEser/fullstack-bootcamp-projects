@@ -15,6 +15,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * Var olan spring projeniz içerisine aşağıdaki dependencyleri ekleyiniz. Var olan dependencyleri sakın çıkarmayın.
  * İçerisinde ```Spring Web, Spring Data JPA, Lombok, Postgresql driver``` dependencyler eklenmeli.
  * Maven dependency management sistemini kullanarak tüm dependencyleri install edin.
+ * Tüm tablolarınızı fsweb şeması altında oluşturunuz
  * Uygulamanızı  ```8080``` portundan ayağa kaldırın.
  * Meyve ve sebzeler için bir rest Api oluşturacağız.
  
