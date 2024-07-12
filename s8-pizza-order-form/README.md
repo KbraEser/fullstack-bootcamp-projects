@@ -46,6 +46,23 @@ Bu proje, Workintech Full Stack Web Geliştirme eğitimindeki S8 sunuma hazırl�
 - `index.html` dosyasını düzenleyerek HTML yapısını oluşturun.
 - Figma tasarımını ([Pizza v2.1](https://www.figma.com/design/q0xPW5uCel3rdzFgpjR9lt/S7-Challange-v2.1?node-id=0-1&t=YaF1bwQuJY7HrwS4-1)) referans alarak CSS (`style.css`) ile sayfayı ve formu şekillendirin.
 
+#### Renk Kodları
+
+1. Sarı #FDC913
+2. Açık Gri: #5F5F5F
+3. Koyu Gri #292929
+4. Kırmızı #CE2829
+5. Bej: #FAF7F2
+
+#### Tasarımda Kullanılan Fontlar
+
+Logo proje klasöründe SVG olarak yüklü
+
+- [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
+- [Barlow](https://fonts.google.com/specimen/Barlow)
+- [Quattrocento](https://fonts.google.com/specimen/Quattrocento)
+- [Satisfy](https://fonts.google.com/specimen/Satisfy)
+
 **Önemli Notlar:**
 
 - Bu projede JavaScript kullanmayacaksınız. Form işlevsel olmayacak, sadece statik olarak geliştirilecek.
