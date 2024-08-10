@@ -44,7 +44,8 @@ Bu proje, Workintech Full Stack Web Geliştirme eğitimindeki S8 sunuma hazırl�
 - `style.css`: Tüm stillerinizin bulunduğu CSS dosyası.
 - `assets/`: Projede kullanacağınız tüm resim ve diğer statik dosyalar sizin için önden dışarı aktarıldı.
 - `index.html` dosyasını düzenleyerek HTML yapısını oluşturun.
-- Figma tasarımını ([S6 Pizza v2.1 Mobil]([https://www.figma.com/design/q0xPW5uCel3rdzFgpjR9lt/S7-Challange-v2.1?node-id=0-1&t=YaF1bwQuJY7HrwS4-1)) referans alarak CSS (`style.css`) ile sayfayı ve formu şekillendirin.
+- Figma tasarımını ([S6 Pizza v2.1 Mobil](https://www.figma.com/design/B6rGWNjWqVyvuB9htLyIMR/S6-Challange-v2.1?node-id=0-1&t=FwsCbqkh8NWchoPX-1))
+-  referans alarak CSS (`style.css`) ile sayfayı ve formu şekillendirin.
 
 #### Renk Kodları
 
@@ -72,7 +73,7 @@ Logo proje klasöründe SVG olarak yüklü
 
 **Kaynaklar:**
 
-- **Figma Tasarımı:** [Pizza v2.1](https://www.figma.com/design/q0xPW5uCel3rdzFgpjR9lt/S7-Challange-v2.1?node-id=0-1&t=YaF1bwQuJY7HrwS4-1)
+- **Figma Tasarımı:** ([S6 Pizza v2.1 Mobil](https://www.figma.com/design/B6rGWNjWqVyvuB9htLyIMR/S6-Challange-v2.1?node-id=0-1&t=FwsCbqkh8NWchoPX-1))
 - **CSS içerisinde değişken tanımlayıp, yeniden kullanabilmek:** [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 ## Sorularınız mı Var?
