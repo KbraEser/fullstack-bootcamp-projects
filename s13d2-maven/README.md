@@ -15,6 +15,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 * 121 sayısının tersten okunusu da 121 olduğu için sayı plaindrom dur. Ya da 1001 sayısı da örnek verilebilir.
 * ```isPalindrome``` isimli bir metod yazınız. ```int``` bir parametre almalı.
 * Metodun dönüş değeri ```boolean``` olmalı.
+* Negatif bir değer verdiğinde işareti yok saymalı.
 
 isPalindrome(-1221); => true dönmeli
 isPalindrome(707); => true dönmeli
