@@ -18,7 +18,9 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 * Negatif bir değer verdiğinde işareti yok saymalı.
 
 isPalindrome(-1221); => true dönmeli
+
 isPalindrome(707); => true dönmeli
+
 isPalindrome(11212); => false dönmeli
 
 ### Mükemmel Sayıları Bulma
