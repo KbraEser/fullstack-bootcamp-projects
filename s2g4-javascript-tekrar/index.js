@@ -102,7 +102,6 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
-// 3a. enbuyuk ve enkucuk isminde 2 adet değişken tanımlayın ve sayilar dizisindeki en küçük sayı ile en büyük sayıyı bu değişkenlere atayın. (for döngüsü kullanın)
 
 enbuyuk = sayilar[0];
 enkucuk = sayilar[0];
@@ -117,28 +116,50 @@ for (let i = 1; i < sayilar.length; i++) {
 console.log(enbuyuk);
 console.log(enkucuk);
 
-/* kodlar buraya */
-
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+console.log(ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce(
+  (toplam, sayi) => toplam + sayi,
+  0,
+);
+console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
+console.log(siralisayilar);
 
 // 3f çözümü
+// 3f. `tekraredensayilar` adında bir dizi oluşturun. sayilar dizisi içerisindeki bazı sayılar birden fazla kere yazılmış. sayilar dizisi içerisinde birden fazla kez yazılmış sayıları tespit ederek kaç kere tekrar edildiğini belirten bir string oluşturulup `tekraredensayilar` dizisine aktarılmasını istiyoruz. Örnek string: "{sayı} sayısı {tekrarSayisi} kere tekrar edilmiştir"
+tekraredensayilar = [];
+let sayacNesnesi = {};
 
-/* kodlar buraya */
+sayilar.forEach((sayi) => {
+  sayacNesnesi[sayi] = (sayacNesnesi[sayi] || 0) + 1;
+});
 
+for (let sayi in sayacNesnesi) {
+  if (sayacNesnesi[sayi] > 1) {
+    tekraredensayilar.push(
+      `${sayi} sayısı ${sayacNesnesi[sayi]} kere tekrar edilmiştir`,
+    );
+  }
+}
+console.log(tekraredensayilar);
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
 function sa() {
