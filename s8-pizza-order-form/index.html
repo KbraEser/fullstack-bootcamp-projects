@@ -1,26 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workintech + 🍕</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 
-  <body>
-    <div id="app">
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s5-bonus-challenge-html-pizza" target="_blank">
-          <img src="./workintech.svg" class="logo" alt="Workintech logo">
-        </a>
-        <h1>Hello Coder!</h1>
-        <p class="read-the-docs">
-          Click on the Workintech logo to see the Readme of the project
-        </p>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workintech + 🍕</title>
+</head>
+
+<body>
+  <div id="app">
+    <section class="home-page flex-column">
+      <img src="./public/assets/iteration-1/logo.svg" alt="logo" class="home-page-logo" />
+      <img class="home-bg-mobile" src="./public/assets/iteration-2/pictures/form-banner.png"
+        alt="Pizza ve lezzet görseli" />
+      <div class="home-page-content">
+        <p>fırsatı kaçırma</p>
+        <p>KOD ACIKTIRIR </p>
+        <p> PIZZA, DOYURUR</p>
+        <button class="home-page-btn" type="button">ACIKTIM</button>
       </div>
+    </section>
+
+
+    <section class="menu-section">
+      <nav class="flex-between">
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/1.svg" alt="kore">
+          <span class="menu-text">YENİ! Kore</span>
+        </a>
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/2.svg" alt="pizza">
+          <span class="menu-text">Pizza</span>
+        </a>
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/3.svg" alt="burger">
+          <span class="menu-text">Burger</span>
+        </a>
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/4.svg" alt="kızartmalar">
+          <span class="menu-text">Kızartmalar</span>
+        </a>
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/5.svg" alt="fast food">
+          <span class="menu-text">Fast food</span>
+        </a>
+        <a href="#">
+          <img src="./public/assets/iteration-2/icons/6.svg" alt="gazlı içecek">
+          <span class="menu-text">Gazlı İçecek</span>
+        </a>
+      </nav>
+    </section>
+
+    <div class="main-container">
+
+      <section class="order-area">
+        <div class="order-area-content">
+          <div class="order-area-content-pizza">
+            <img src="./public/assets/iteration-2/cta/kart-1.png" alt="pizza" class="pizza-img">
+            <div class="pizza-content flex-column">
+              <h2>Özel Lezzetus</h2>
+              <p>Position:Absolute Acı Burger</p>
+              <button class="order-btn">SİPARİŞ VER </button>
+            </div>
+          </div>
+          <div class="order-area-content-items flex-column">
+            <div class="order-area-content-items-burger">
+              <img src="./public/assets/iteration-2/cta/kart-2.png" alt="burger" class="burger-img">
+              <div class="burger-content flex-column">
+                <h3>Hackathlon Burger Menu</h3>
+                <button class="order-btn">SİPARİŞ VER</button>
+              </div>
+            </div>
+            <div class="order-area-content-items-carriers">
+              <img src="./public/assets/iteration-2/cta/kart-3.png" alt="carriers" class="carriers-img">
+              <div class="carriers-content flex-column">
+                <h3><span>Çoooook</span> hızlı npm gibi kurye</h3>
+                <button class="order-btn">SİPARİŞ VER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="explain-section">
+          <p class="explain-section-title">en çok paketlenen menüler</p>
+          <p class="explain-section-subtitle">Acıktıran Kodlara Doyuran Lezzetler</p>
+        </div>
+        <section class="menu-section">
+          <nav id="menu-section-pills" class="flex-between">
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/1.svg" alt="kore">
+              <span class="menu-text">Ramen</span>
+            </a>
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/2.svg" alt="pizza">
+              <span class="menu-text">Pizza</span>
+            </a>
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/3.svg" alt="burger">
+              <span class="menu-text">Burger</span>
+            </a>
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/4.svg" alt="kızartmalar">
+              <span class="menu-text">Kızartmalar</span>
+            </a>
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/5.svg" alt="fast food">
+              <span class="menu-text">Fast food</span>
+            </a>
+            <a href="#">
+              <img src="./public/assets/iteration-2/icons/6.svg" alt="gazlı içecek">
+              <span class="menu-text">Gazlı İçecek</span>
+            </a>
+          </nav>
+        </section>
+        <section class="food-section flex-between">
+          <div class="food-item">
+            <div class="food-item-area">
+              <img src="./public/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza">
+              <div class="explain">
+                <p>Terminal Pizza</p>
+                <div class="rating flex-between">
+                  <p>4.9</p>
+
+                  <div class="price flex-between">
+                    <p>(200)</p>
+                    <p class="bold">60₺</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-area">
+              <img src="./public/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza">
+              <div class="explain">
+                <p>Position Absolute Acı Pizza</p>
+
+                <div class="rating flex-between">
+                  <p>4.9</p>
+
+                  <div class="price flex-between">
+                    <p>(200)</p>
+                    <p class="bold">60₺</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-area">
+              <img src="./public/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger">
+              <div class="explain">
+                <p>useEffect Tavuklu Burger</p>
+                <div class="rating flex-between">
+                  <p>4.9</p>
+                  <div class="price flex-between">
+                    <p>(200)</p>
+                    <p class="bold">60₺</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
-  </body>
+
+    <footer>
+      <div class="footer-content typography-text">
+        <div class="footer-content-container flex-between">
+          <div class="footer-content-left">
+            <div class="address flex-between">
+              <div>
+                <img src="./public/assets/iteration-2/footer/logo-footer.svg" alt="logo" class="logo">
+                <ul>
+                  <li>
+                    <img src="./public/assets/iteration-2/footer/icons/icon-1.png" alt="location">
+                    <p>341 Londonderry Road,
+                      Istanbul Türkiye</p>
+                  </li>
+                  <li>
+                    <img src="./public/assets/iteration-2/footer/icons/icon-2.png" alt="mail">
+                    <p>aciktim@teknolojikyemekler.com</p>
+                  </li>
+                  <li>
+                    <img src="./public/assets/iteration-2/footer/icons/icon-3.png" alt="phone">
+                    <p>+90 216 123 45 67</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu flex-column">
+                <p class="menu-title">Hot Menu</p>
+
+                <p>Terminal Pizza</p>
+                <p>5 Kişilik Hackathlon Pizza</p>
+                <p>useEffect Tavuklu Pizza</p>
+                <p>Beyaz Console Frosty</p>
+                <p>Testler Geçti Mutlu Burger</p>
+                <p>Position Absolute Acı Burger</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content-right">
+            <p class="menu-title">Instagram</p>
+            <div class="instagram-content">
+              <img src="./public/assets/iteration-2/footer/insta/li-0.png" alt="instagram">
+              <img src="./public/assets/iteration-2/footer/insta/li-1.png" alt="instagram">
+              <img src="./public/assets/iteration-2/footer/insta/li-2.png" alt="instagram">
+              <img src="./public/assets/iteration-2/footer/insta/li-3.png" alt="instagram">
+              <img src="./public/assets/iteration-2/footer/insta/li-4.png" alt="instagram">
+              <img src="./public/assets/iteration-2/footer/insta/li-5.png" alt="instagram">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>© 2023 Teknolojik Yemekler. </p>
+          <a href="#" class="footer-bottom-twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
 
 </html>
