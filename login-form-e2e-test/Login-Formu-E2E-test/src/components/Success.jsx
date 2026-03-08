@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 
 const Success = () => {
   return (
-    <div className="text-center py-5" data-cy="success-page">
+    <div
+      className="d-flex flex-column align-items-center justify-content-center text-center min-vh-100 px-3"
+      data-cy="success-page"
+    >
       <h1 data-cy="success-title">Giriş Başarılı</h1>
-      <p className="text-muted">Başarıyla giriş yaptınız.</p>
-      <Link to="/login" className="btn btn-outline-primary">
+      <p className="text-white mt-3">Başarıyla giriş yaptınız.</p>
+      <Link to="/login" className="btn btn-outline-primary mt-5">
         Tekrar Giriş Yap
       </Link>
     </div>
