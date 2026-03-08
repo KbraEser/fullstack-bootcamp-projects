@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import {
   Form,
   FormGroup,
@@ -26,6 +26,36 @@ const getErrors = (form) => {
 };
 
 const LoginForm = () => {
+  const initialForm = {
+    email: "",
+    password: "",
+    terms: false,
+  };
+
+  const [form, setForm] = useState(initialForm);
+  const [errors, setErrors] = useState({});
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    const newErrors = getErrors(form);
+    setErrors(newErrors);
+    setIsValid(Object.keys(newErrors).length === 0);
+  }, [form]);
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!isValid) return;
+    navigate("/success");
+  };
+
   return (
     <div className="min-vh-100 d-flex justify-content-center align-items-center px-3">
       <Form
