@@ -9,8 +9,8 @@ const Success = () => {
     >
       <h1 data-cy="success-title">Giriş Başarılı</h1>
       <p className="text-white mt-3">Başarıyla giriş yaptınız.</p>
-      <Link to="/login" className="btn btn-outline-primary mt-5">
-        Tekrar Giriş Yap
+      <Link to="/" className="btn btn-outline-primary mt-5">
+        Ana Sayfaya Dön
       </Link>
     </div>
   );
