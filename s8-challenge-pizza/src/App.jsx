@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
-import './App.css'
+import { Routes, Route, useLocation } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import OrderPage from "./components/OrderPage";
+import Success from "./components/Success";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import HomePage from "./components/HomePage";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [submittedOrder, setSubmittedOrder] = useState(null);
+  const navigate = useNavigate();
+  const handleOrderSuccess = (orderData) => {
+    setSubmittedOrder(orderData);
+    navigate("/success");
+  };
 
   return (
     <>
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s7-challenge-pizza" target="_blank">
-          <img src={workintech} className="logo" alt="Workintech logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Workintech + 🍕</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Absolute Acı Pizza sayısı {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Workintech or Pizza logos to learn more
-      </p>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/order"
+          element={<OrderPage onOrderSuccess={handleOrderSuccess} />}
+        />
+        <Route
+          path="/success"
+          element={<Success orderData={submittedOrder} />}
+        />
+      </Routes>
+      <ToastContainer position="top-right" autoClose={2000} theme="light" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,23 @@
+.success-page {
+  min-height: 100vh;
+}
+
+.success-page h1 {
+  font-size: 86px;
+  line-height: 92px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.success-divider {
+  border: 0;
+  border-top: 0.5px solid var(--bej);
+  opacity: 1;
+}
+.detail-wrapper {
+  width: 200px;
+}
+
+.success-title {
+  text-align: center;
+}

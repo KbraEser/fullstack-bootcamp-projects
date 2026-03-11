@@ -1,0 +1,95 @@
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explain-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.explain-section-title {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--kirmizi);
+  line-height: 2.77rem;
+}
+
+.explain-section-subtitle {
+  font-family: var(--font-barlow);
+  font-weight: 800;
+  font-size: 2.625rem;
+  line-height: 3.51rem;
+  color: var(--koyu-gri);
+}
+
+.menu-section nav {
+  margin: 0 auto;
+  padding: 1.625rem 0;
+  gap: 2rem;
+  width: 1072px;
+  max-width: 100%;
+}
+
+.menu-section a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--koyu-gri);
+  white-space: nowrap;
+}
+
+#menu-section-pills a {
+  padding: 0.75rem 1.25rem;
+  border-radius: 3.125rem;
+  background-color: var(--bej);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+#menu-section-pills a:nth-child(2) {
+  background-color: var(--koyu-gri);
+  color: var(--color-white);
+}
+
+.menu-text {
+  font-family: var(--font-barlow);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-section,
+  .footer-content,
+  .order-area,
+  .footer-bottom {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .menu-section nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .menu-section nav a {
+    flex: 0 0 calc(50% - 0.25rem);
+    gap: 0.2rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  #menu-section-pills img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #menu-section-pills a {
+    padding: 0.4rem 0.5rem;
+  }
+}
