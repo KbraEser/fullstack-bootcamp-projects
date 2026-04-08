@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import movieProject from "../src/img/movieProject.png";
-import rentACarImage from "../src/img/rent-a-car.png";
-import adminDashboardImage from "../src/img/admin-dashboard.png";
+import movieProject from "./img/movieProject.PNG";
+import rentACarImage from "./img/rent-a-car.PNG";
+import adminDashboardImage from "./img/admin-dashboard.PNG";
 
 const githubUrl = "https://github.com/KbraEser";
 const linkedinUrl = "https://www.linkedin.com/in/kübra-eser-612851169/";
