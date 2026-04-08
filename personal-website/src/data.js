@@ -121,7 +121,7 @@ const data = {
           title: "Admin Dashboard",
           description:
             "A modern dashboard application featuring charts and analytics, payment and user management, dark mode support, responsive design, and interactive data visualization. Built with Next.js 16, TypeScript, Tailwind CSS, shadcn/ui, and Recharts.",
-          features: ["Zod", "TanStack", "Axios"],
+          features: ["Zod", "TanStack", "Axios", "Next.js"],
           github: `${githubUrl}/admin`,
           site: `${githubUrl}/admin`,
         },
@@ -257,7 +257,7 @@ const data = {
           title: "Admin Dashboard",
           description:
             "Modern bir dashboard uygulaması. Grafikler ve istatistikler, ödeme ve kullanıcı yönetimi, dark mode desteği, responsive tasarım ve interaktif veri görselleştirme sunar. Next.js 16, TypeScript, Tailwind CSS, shadcn/ui ve Recharts kullanılarak geliştirilmiştir.",
-          features: ["React", "Zod", "TanStack"],
+          features: ["Next.js", "Zod", "TanStack"],
           github: `${githubUrl}/admin`,
           site: `${githubUrl}/admin`,
         },
