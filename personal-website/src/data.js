@@ -105,7 +105,7 @@ const data = {
             "A React-based movie and TV series platform built with the TMDB API. It features a hero slider with categorized discovery, real-time search, multilingual support (Turkish/English), a fully responsive design, and detailed content pages. Built using React 19, TypeScript, Material-UI, SCSS, Redux Toolkit,Router, Axios, and Swiper.",
           features: ["React", "RTK", "Router"],
           github: `${githubUrl}/cine-fusion`,
-          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
+          site: "https://www.youtube.com/watch?v=PNaZncvUb2o",
         },
         {
           image: rentACarImage,
@@ -241,7 +241,7 @@ const data = {
             "TMDB API ile geliştirilmiş React tabanlı film ve dizi platformu. Hero slider ve kategorilerle keşif, gerçek zamanlı arama, Türkçe/İngilizce destek, tüm cihazlara uyumlu tasarım ve detay sayfaları sunar.React 19,TypeScript, Material-UI,SCSS, Redux Toolkit, React Router DOM, Axios + Swiper,Redux Toolkit, Swiper",
           features: ["RTK", "Axios", "Router"],
           github: `${githubUrl}/cine-fusion`,
-          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
+          site: "https://www.youtube.com/watch?v=PNaZncvUb2o",
         },
         {
           image: rentACarImage,

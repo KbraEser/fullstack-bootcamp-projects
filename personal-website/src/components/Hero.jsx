@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
       <div className="">
         <img
-          className="w-60 h-47 md:w-119 md:h-94 rounded-lg object-cover   "
+          className="w-60 h-47 md:w-119 md:h-94 rounded-lg "
           src={heroImage}
           alt="hero"
         />
