@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../img/upworkfoto.jpg";
+import heroImage from "../img/upworkfoto.JPG";
 
 import { useLang } from "../context/LanguageContext.jsx";
 
