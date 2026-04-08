@@ -17,7 +17,7 @@ const Footer = () => {
           href="mailto:almilasucode@gmail.com"
         >
           <span className="inline-block text-[#AF0C48] dark:text-[#d587a4] font-inter font-medium text-xl">
-            👉 almilasucode@gmail.com
+            👉 kubra90000@gmail.com
           </span>
         </a>
         <div className="flex flex-col lg:flex-row gap-5 font-inter font-medium text-lg pt-5 lg:pt-0">

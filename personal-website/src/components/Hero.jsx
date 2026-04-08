@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../img/hero-img.png";
+import heroImage from "../img/upworkfoto.jpg";
 
 import { useLang } from "../context/LanguageContext.jsx";
 
@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
       <div className="">
         <img
-          className="w-60 h-47 md:w-119 md:h-94 rounded-lg    "
+          className="w-60 h-47 md:w-119 md:h-94 rounded-lg object-cover   "
           src={heroImage}
           alt="hero"
         />
