@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="flex  items-center lg:justify-start justify-center gap-2">
           <hr className="border-b border-secondary w-25" />
           <h1 className="font-inter text-xl font-medium text-primary">
-            Almila Su
+            Kübra Eser
           </h1>
         </div>
         <h1 className="font-inter text-center lg:text-left   text-3xl  md:text-6xl  font-bold text-[#1F2937] dark:text-primary">

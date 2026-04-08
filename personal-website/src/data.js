@@ -1,7 +1,10 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import workintechImage from "./img/Workintech.png";
-import JourneyImage from "./img/Journey.png";
-import RandomJokesImage from "./img/RandomJokes.png";
+import movieProject from "../src/img/movieProject.png";
+import rentACarImage from "../src/img/rent-a-car.png";
+import adminDashboardImage from "../src/img/admin-dashboard.png";
+
+const githubUrl = "https://github.com/KbraEser";
+const linkedinUrl = "https://www.linkedin.com/in/kübra-eser-612851169/";
 
 const data = {
   en: {
@@ -16,27 +19,27 @@ const data = {
       },
       {
         title: "Hire me",
-        url: "#hire-me",
+        url: "#footer",
       },
     ],
     heroSection: {
       title: "Creative thinker Minimalism lover",
       description:
-        "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
+        "Hi, I’m Kübra. I’m a full-stack developer. If you are looking for a Developer to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
       buttons: [
         {
           text: "Hire me",
-          url: "#hire-me",
+          url: "#footer",
         },
         {
           icon: FaGithub,
           text: "Github",
-          url: "https://github.com/yourusername",
+          url: githubUrl,
         },
         {
           icon: FaLinkedinIn,
           text: "Linkedin",
-          url: "https://www.linkedin.com/in/yourusername",
+          url: linkedinUrl,
         },
       ],
     },
@@ -44,19 +47,19 @@ const data = {
       title: "Skills",
       skills: [
         {
-          title: "Java Script",
+          title: "JavaScript / TypeScript",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "I developed a Vanilla Amazon Clone project with JavaScript. I usually use TypeScript in my projects.",
         },
         {
           title: "React.Js",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "In my projects, I usually manage the state using Redux Toolkit.",
         },
         {
-          title: "Node.Js",
+          title: "Next.Js",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "I've just started developing projects with Next.JS and I'm building an e-commerce site where I'm developing the admin dashboard.",
         },
       ],
     },
@@ -65,7 +68,7 @@ const data = {
       profile: [
         {
           label: "Date of Birth",
-          value: "March 24, 1996",
+          value: "September 29, 1995",
         },
         {
           label: "City of Residence",
@@ -73,11 +76,11 @@ const data = {
         },
         {
           label: "Education",
-          value: "Hacettepe University, Biology",
+          value: "Gazi University, Energy Systems Engineering",
         },
         {
           label: "Degree",
-          value: "Bachelor's Degree, 2016",
+          value: "Bachelor's Degree, 2018",
         },
         {
           label: "Preferred Role",
@@ -87,39 +90,40 @@ const data = {
       aboutMe: {
         title: "About Me",
         description1:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "I've been playing around with HTML, CSS, SCSS ,Tailwind CSS, JavaScript, TypeScript, Tan Stack Query, React and  Next.JS turning designs into real, live websites that people can interact with.",
         description2:
-          "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+          "Always curious about what's next in the tech world, I'm constantly learning and trying out new things to keep my skills sharp.",
       },
     },
     projectsSection: {
+      title: "Projects",
       projects: [
         {
-          image: workintechImage,
-          title: "Workintech",
+          image: movieProject,
+          title: "Movie Project",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Workintech",
-          site: "https://workintech.com",
+            "A React-based movie and TV series platform built with the TMDB API. It features a hero slider with categorized discovery, real-time search, multilingual support (Turkish/English), a fully responsive design, and detailed content pages. Built using React 19, TypeScript, Material-UI, SCSS, Redux Toolkit,Router, Axios, and Swiper.",
+          features: ["React", "RTK", "Router"],
+          github: `${githubUrl}/cine-fusion`,
+          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
         },
         {
-          image: RandomJokesImage,
-          title: "Random Jokes",
+          image: rentACarImage,
+          title: "Rent a Car",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Journey",
-          site: "https://journey.com",
+            "A modern and user-friendly car rental web application. Features include authentication, car listing and filtering, a reservation system, user dashboard, and responsive design. Built with React 19, TypeScript, Date-Picker,React Hook Form, Redux Toolkit, and Supabase.",
+          features: ["React", "RTK", "Supabase"],
+          github: `${githubUrl}/RentACar/tree/main/rent-a-car`,
+          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
         },
         {
-          image: JourneyImage,
-          title: "Journey",
+          image: adminDashboardImage,
+          title: "Admin Dashboard",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Portfolio",
-          site: "https://portfolio.com",
+            "A modern dashboard application featuring charts and analytics, payment and user management, dark mode support, responsive design, and interactive data visualization. Built with Next.js 16, TypeScript, Tailwind CSS, shadcn/ui, and Recharts.",
+          features: ["Zod", "TanStack", "Axios"],
+          github: `${githubUrl}/admin`,
+          site: `${githubUrl}/admin`,
         },
       ],
     },
@@ -135,6 +139,8 @@ const data = {
     },
     footerSection: {
       title: "Let's work together on your next product",
+      github: githubUrl,
+      linkedin: linkedinUrl,
     },
   },
   tr: {
@@ -149,27 +155,27 @@ const data = {
       },
       {
         title: "İşe Alabilirsiniz",
-        url: "#hire-me",
+        url: "#footer",
       },
     ],
     heroSection: {
       title: "Yaratıcı düşünür, Minimalizm aşığı.",
       description:
-        "Merhaba, ben Almila. Ben bir full-stack geliştiriciyim. Eğer bir geliştirici arıyorsanız, beni işe alabilirsiniz.",
+        "Merhaba, ben Kübra. Ben bir full-stack geliştiriciyim. Eğer bir geliştirici arıyorsanız, beni işe alabilirsiniz.",
       buttons: [
         {
           text: "İşe Alabilirsiniz",
-          url: "#hire-me",
+          url: "#footer",
         },
         {
           icon: FaGithub,
           text: "Github",
-          url: "https://github.com/yourusername",
+          url: githubUrl,
         },
         {
           icon: FaLinkedinIn,
           text: "Linkedin",
-          url: "https://www.linkedin.com/in/yourusername",
+          url: linkedinUrl,
         },
       ],
     },
@@ -177,19 +183,19 @@ const data = {
       title: "Yetenekler",
       skills: [
         {
-          title: "Java Script",
+          title: "JavaScript / TypeScript",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "JS ile bir Vanilla Amazon Klon projesi geliştirdim. Genellikle projelerimde TypeScript kullanıyorum.",
         },
         {
           title: "React.Js",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Projelerimde genellikle state yönetim kısmını Redux Toolkit ile yapıyorum.",
         },
         {
-          title: "Node.Js",
+          title: "Next.Js",
           description:
-            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Next.JS ile proje geliştirme yeni başladım ve admin dashboard kısmını geliştirdiğim bir e-commerce sitesi yapıyorum.",
         },
       ],
     },
@@ -198,7 +204,7 @@ const data = {
       profile: [
         {
           label: "Doğum Tarihi",
-          value: "Mart 24, 1996",
+          value: "Eylül 29, 1995",
         },
         {
           label: "Yaşadığı Şehir",
@@ -206,11 +212,11 @@ const data = {
         },
         {
           label: "Eğitim",
-          value: "Hacettepe Üniversitesi, Biyoloji",
+          value: "Gazi Üniversitesi, Enerji Sistemleri Mühendisliği",
         },
         {
           label: "Derece",
-          value: "Lisans, 2016",
+          value: "Lisans, 2018",
         },
         {
           label: "Tercih Edilen Rol",
@@ -220,39 +226,40 @@ const data = {
       aboutMe: {
         title: "Hakkımda",
         description1:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "HTML, CSS, SCSS ,Tailwind CSS, JavaScript , TypeScript, Tan Stack Query, React,  ve Next.JS ile uğraşıyorum, tasarımları insanların etkileşim kurabileceği gerçek, canlı web sitelerine dönüştürüyorum.",
         description2:
-          "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+          "Teknoloji dünyasında gelecekte ne olacağını merak ediyorum, becerilerimi keskin tutmak için sürekli olarak yeni şeyler öğreniyor ve deniyorum.",
       },
     },
     projectsSection: {
+      title: "Projeler",
       projects: [
         {
-          image: workintechImage,
-          title: "Workintech",
+          image: movieProject,
+          title: "Movie Project",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Workintech",
-          site: "https://workintech.com",
+            "TMDB API ile geliştirilmiş React tabanlı film ve dizi platformu. Hero slider ve kategorilerle keşif, gerçek zamanlı arama, Türkçe/İngilizce destek, tüm cihazlara uyumlu tasarım ve detay sayfaları sunar.React 19,TypeScript, Material-UI,SCSS, Redux Toolkit, React Router DOM, Axios + Swiper,Redux Toolkit, Swiper",
+          features: ["RTK", "Axios", "Router"],
+          github: `${githubUrl}/cine-fusion`,
+          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
         },
         {
-          image: RandomJokesImage,
-          title: "Random Jokes",
+          image: rentACarImage,
+          title: "Rent a Car",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Journey",
-          site: "https://journey.com",
+            "Modern ve kullanıcı dostu bir araç kiralama web uygulaması. Kimlik doğrulama, araç listeleme ve filtreleme, rezervasyon sistemi, kullanıcı paneli ve responsive tasarım özellikleri sunar. React 19, TypeScript,Date-Picker,React Hook Form, Redux Toolkit ve Supabase ile geliştirilmiştir.",
+          features: ["React", "RTK", "Supabase"],
+          github: `${githubUrl}/RentACar/tree/main/rent-a-car`,
+          site: "https://www.youtube.com/watch?v=2aHeprJTS-A&t=6s",
         },
         {
-          image: JourneyImage,
-          title: "Journey",
+          image: adminDashboardImage,
+          title: "Admin Dashboard",
           description:
-            "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          features: ["react", "redux", "axios"],
-          github: "https://github.com/Portfolio",
-          site: "https://portfolio.com",
+            "Modern bir dashboard uygulaması. Grafikler ve istatistikler, ödeme ve kullanıcı yönetimi, dark mode desteği, responsive tasarım ve interaktif veri görselleştirme sunar. Next.js 16, TypeScript, Tailwind CSS, shadcn/ui ve Recharts kullanılarak geliştirilmiştir.",
+          features: ["React", "Zod", "TanStack"],
+          github: `${githubUrl}/admin`,
+          site: `${githubUrl}/admin`,
         },
       ],
     },
@@ -268,6 +275,8 @@ const data = {
     },
     footerSection: {
       title: "Diğer projelerde birlikte çalışalım",
+      github: githubUrl,
+      linkedin: linkedinUrl,
     },
   },
 };

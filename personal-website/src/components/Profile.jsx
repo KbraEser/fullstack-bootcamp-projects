@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <div className="flex flex-col">
       <hr className="mt-11" />
-      <h2 className="font-inter text-5xl font-semibold text-center lg:text-left text-heading mb-14 mt-10">
+      <h2 className="font-inter text-5xl font-semibold text-center lg:text-left text-heading mb-14 mt-10 dark:text-white">
         {data.profileSection.title}
       </h2>
 

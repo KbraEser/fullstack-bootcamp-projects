@@ -58,10 +58,10 @@ const Projects = () => {
   const projects = data.projectsSection.projects;
 
   return (
-    <div className="mb-35 flex flex-col">
+    <div id="projects" className="mb-35 flex flex-col">
       <hr className="mt-11" />
-      <h2 className="mb-14 mt-10 text-center font-inter text-5xl font-semibold text-heading lg:text-left">
-        Projects
+      <h2 className="mb-14 mt-10 text-center font-inter text-5xl font-semibold text-heading lg:text-left dark:text-white">
+        {data.projectsSection.title}
       </h2>
 
       <div className="lg:hidden">

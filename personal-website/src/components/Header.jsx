@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between mt-10">
       <div className="hidden sm:flex w-16 h-15 bg-[#EEEBFF] rounded-full items-center justify-center">
-        <div className="rotate-30 text-[#7B61FF] font-semibold text-2xl">A</div>
+        <div className="rotate-30 text-[#7B61FF] font-semibold text-2xl">K</div>
       </div>
       <nav>
         <ul className="flex items-center gap-10  md:gap-24 ">

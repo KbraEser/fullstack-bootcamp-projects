@@ -6,8 +6,8 @@ const Skills = () => {
   const skills = data.skillsSection.skills;
 
   return (
-    <div className="mt-10 md:mt-31 text-center lg:text-left ">
-      <h2 className="font-inter text-5xl font-semibold text-heading mb-14">
+    <div id="skills" className="mt-10 md:mt-31 text-center lg:text-left ">
+      <h2 className="font-inter text-5xl font-semibold text-heading mb-14 dark:text-white">
         {data.skillsSection.title}
       </h2>
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-32  lg:justify-between  ">
