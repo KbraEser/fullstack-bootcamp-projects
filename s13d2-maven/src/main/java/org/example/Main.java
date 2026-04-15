@@ -52,15 +52,15 @@ public class Main {
                 "Five", "Six", "Seven", "Eight", "Nine"
         };
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         while (num > 0) {
             int basamak = num % 10;
-            result = numbers[basamak] + " " + result;
+            result.insert(0, numbers[basamak] + " ");
             num = num / 10;
         }
 
-        return result.trim();
+        return result.toString().trim();
     }
 
 }
