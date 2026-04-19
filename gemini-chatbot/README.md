@@ -1,4 +1,4 @@
-# Vite + React — Gemini Sohbet
+# Gemini-Sohbet AI ChatBot
 
 Google Gemini API ile çalışan basit bir sohbet arayüzü. [Vite](https://vite.dev/) ve [React](https://react.dev/) ile geliştirilmiştir; arayüzde [Tailwind CSS](https://tailwindcss.com/) kullanılır.
 
