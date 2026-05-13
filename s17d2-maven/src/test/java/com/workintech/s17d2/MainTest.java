@@ -1,4 +1,4 @@
-package com.workintech.s17d2;
+ package com.workintech.s17d2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.workintech.s17d2.model.*;
@@ -108,7 +108,7 @@ class MainTest {
         assertTrue(seniorDeveloper instanceof Developer, "SeniorDeveloper should extend Developer.");
         assertEquals(Experience.SENIOR, seniorDeveloper.getExperience(), "Experience should be SENIOR.");
     }
-    
+
     
     
     /*-------------------DeveloperTaxTest-------------------*/
