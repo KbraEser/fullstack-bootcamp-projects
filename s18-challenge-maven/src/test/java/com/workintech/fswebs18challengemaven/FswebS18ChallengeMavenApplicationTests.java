@@ -155,6 +155,7 @@ class FswebS18ChallengeMavenApplicationTests {
 	@Test
 	@DisplayName("Update card test")
 	void testUpdateCard() throws Exception {
+        given(cardRepository.findAll()).willReturn(Arrays.asList(card));
 		Card updatedCard = new Card();
 		updatedCard.setId(1L);
 		updatedCard.setType(Type.KING);
@@ -170,7 +171,7 @@ class FswebS18ChallengeMavenApplicationTests {
 	@Test
 	@DisplayName("Remove card test")
 	void testRemoveCard() throws Exception {
-
+        given(cardRepository.findAll()).willReturn(Arrays.asList(card));
 		given(cardRepository.remove(card.getId())).willReturn(card);
 
 		mockMvc.perform(delete("/cards/{id}", card.getId()))
