@@ -1,0 +1,11 @@
+# IDE and OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Build output and dependencies
+target/
+build/
+dist/
+node_modules/
