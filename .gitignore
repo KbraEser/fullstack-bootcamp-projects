@@ -9,3 +9,7 @@ target/
 build/
 dist/
 node_modules/
+
+# Local environment variables (may contain secrets)
+.env
+.env.*
