@@ -8,10 +8,25 @@ Each folder was originally a separate repository; they were merged here with the
 | Folder | Topic |
 |---|---|
 | [s2g4-javascript-tekrar](s2g4-javascript-tekrar) | JavaScript review exercises |
+| [s8-pizza-order-form](s8-pizza-order-form) | Pizza order form: from design to HTML/CSS |
 | [s8-challenge-pizza](s8-challenge-pizza) | Sprint challenge: pizza ordering SPA |
 | [s10g1-reducer-calculator-solution](s10g1-reducer-calculator-solution) | Calculator with the reducer pattern |
 | [s10g2-redux-filmler-solution](s10g2-redux-filmler-solution) | Movie list with Redux |
 | [s10g3-redux-watchlist-solution](s10g3-redux-watchlist-solution) | Watchlist with Redux |
+
+## React Projects
+
+| Folder | Topic |
+|---|---|
+| [personal-website](personal-website) | Personal website with React and Tailwind |
+| [simple-calculator](simple-calculator) | Calculator with `useReducer` |
+| [task-manager](task-manager) | Task board with team member assignment |
+| [redux-movie-app](redux-movie-app) | Movie list, favorites and details with Redux |
+| [contacts-app](contacts-app) | Contact book with TanStack Query |
+| [gratitude-journal](gratitude-journal) | Daily gratitude notes saved through an API |
+| [gemini-chatbot](gemini-chatbot) | Chat interface using the Google Gemini API |
+| [react-testing-contact-form](react-testing-contact-form) | Contact form tested with React Testing Library |
+| [login-form-e2e-test](login-form-e2e-test) | Login form with end-to-end tests |
 
 ## Java Fundamentals
 
