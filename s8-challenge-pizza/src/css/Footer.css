@@ -1,0 +1,143 @@
+footer {
+  background-color: var(--color-footer-bg);
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  width: 1072px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 3rem;
+  color: var(--color-white);
+}
+
+.footer-content-container {
+  gap: 3rem;
+}
+
+.address ul {
+  width: 250px;
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.address {
+  gap: 6rem;
+}
+
+.address ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content-left .menu {
+  margin-top: 4rem;
+  width: 250px;
+  gap: 0.3rem;
+}
+
+.menu-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 2rem;
+}
+
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.footer-content-right .instagram-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 350px;
+}
+
+.footer-content-right .instagram-content img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  font-family: Barlow;
+}
+
+.footer-bottom-inner {
+  width: 1072px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-bottom-twitter {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+
+@media (max-width: 1024px) {
+  .footer-content,
+  .footer-bottom {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .footer-content-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .address {
+    gap: 3.5rem;
+  }
+
+  .footer-bottom {
+    border-top: none;
+  }
+
+  .footer-bottom-inner {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 550px) {
+  .address {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-content-right .instagram-content {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-content-right .instagram-content img {
+    width: 90%;
+    height: 90%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}

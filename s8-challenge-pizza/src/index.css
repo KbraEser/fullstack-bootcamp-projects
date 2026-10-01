@@ -1,0 +1,72 @@
+:root {
+  font-size: 16px;
+
+  --color-yellow: #fdc913;
+  --color-gray-light: #5f5f5f;
+  --color-gray-dark: #292929;
+  --color-red: #ce2829;
+  --color-beige: #faf7f2;
+  --color-white: #ffffff;
+  --color-footer-bg: #1a1a1a;
+
+  --sari: var(--color-yellow);
+  --acik-gri: var(--color-gray-light);
+  --koyu-gri: var(--color-gray-dark);
+  --kirmizi: var(--color-red);
+  --bej: var(--color-beige);
+  --border-gri: #d9d9d9;
+
+  --font-roboto: "Roboto Condensed", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-quattrocento: "Quattrocento", serif;
+  --font-satisfy: "Satisfy", cursive;
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
+
+  font-family: var(--font-barlow);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--koyu-gri);
+  background-color: var(--bej);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-roboto-condensed {
+  font-family: var(--font-roboto-condensed);
+}
+.font-barlow {
+  font-family: var(--font-barlow);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-quattrocento {
+  font-family: var(--font-quattrocento);
+}
+.font-satisfy {
+  font-family: var(--font-satisfy);
+}
+
+.text-acik-gri {
+  color: var(--acik-gri);
+}
+.text-koyu-gri {
+  color: var(--koyu-gri);
+}
+.text-kirmizi {
+  color: var(--kirmizi);
+}
+.text-sari {
+  color: var(--sari);
+}
+.text-bej {
+  color: var(--bej);
+}
+.bg-background {
+  background-color: var(--kirmizi);
+}
+.bg-bej {
+  background-color: var(--bej);
+}

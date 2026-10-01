@@ -1,0 +1,148 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-area-content {
+  display: flex;
+  gap: 1rem;
+  padding-top: 4.25rem;
+}
+
+.order-area-content-pizza {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+  max-width: 100%;
+  aspect-ratio: 530 / 450;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--color-beige);
+}
+
+.pizza-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pizza-content {
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+}
+
+.pizza-content h2 {
+  width: 290px;
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.3rem;
+}
+
+.pizza-content p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.67rem;
+  padding-top: 0.3rem;
+}
+
+.order-btn {
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  background-color: var(--color-white);
+  color: var(--color-red);
+  border-radius: 3.125rem;
+  border: none;
+  width: 9.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.order-area-content-items {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  aspect-ratio: 530 / 450;
+}
+
+.order-area-content-items-burger,
+.order-area-content-items-carriers {
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.burger-img,
+.carriers-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.burger-content,
+.carriers-content {
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+  padding: 1rem;
+}
+
+.burger-content h3,
+.carriers-content h3 {
+  width: 190px;
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.77rem;
+}
+
+.carriers-content h3 span {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+.carriers-content h3 {
+  color: var(--color-gray-dark);
+  font-weight: 900;
+}
+
+@media (max-width: 1024px) {
+  .order-area-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-area-content-pizza {
+    width: 100%;
+    align-self: stretch;
+    flex: 0 0 auto;
+  }
+
+  .order-area-content-items {
+    width: 100%;
+    align-self: stretch;
+    flex-direction: column;
+    aspect-ratio: auto;
+    min-height: 400px;
+  }
+
+  .order-area-content-items-burger,
+  .order-area-content-items-carriers {
+    flex: 1 1 auto;
+    min-height: 220px;
+  }
+}

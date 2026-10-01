@@ -1,0 +1,19 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-beige);
+  padding-bottom: 4rem;
+}
+
+.order-area {
+  width: 1072px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .order-area {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
